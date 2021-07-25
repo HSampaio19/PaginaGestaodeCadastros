@@ -1,0 +1,252 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url('imagens/texturavime.jpg');
+    background-size: cover;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    background-color: #BABCBF
+}
+header{
+    background-color: #F2F2F2;
+    position:static;
+    display: flex;
+    border-bottom: 3px solid #BABCBF;
+    height: 120px;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer{
+    display: flex;
+    background-color: black;
+    color: white;
+    width: 80%;
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    font-size: 2rem;
+    width: 650px;
+}
+
+
+
+#cabecalho{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.LogoCestaria{
+    height: 100px;
+}
+.InputPesquisa{
+    margin-left: 40px;
+    font-size: 1.3rem;
+    height: 2.9rem;
+    max-width: 600px;
+    min-width: 350px;
+    width: 40%;
+    border: 1px solid;
+    border-radius: 1rem 0 0 1rem;
+}
+.InputPesquisa:active,:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+#BotaoPesquisar{
+    min-width: 3rem;
+    width: 3rem ;
+    height: 3rem;
+    color:white;
+    background-color: black;
+    border:none;
+    border-radius:  0 1rem 1rem 0;
+    cursor: pointer;
+}
+.BotaoPesquisar:active,:focus{
+    outline: none;
+    box-shadow: none;
+}
+#sectionForm{
+    z-index: 2;
+    background-color: rgba(70, 70, 70, 0.918);
+    display:flex;
+    position:fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    color: white;
+    font: 1.5rem sans-serif;
+    text-align: justify;
+    visibility:hidden;
+}
+.FormularioCliente{
+    border: 5px;
+    border-style: groove;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: gray;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: white;
+    font: 1.5rem sans-serif;
+    width:500px;
+}
+
+.InputForm{
+    margin:10px auto;
+    font-size: 1rem;
+    width:300px;
+    height: 1.3rem;
+}
+label{
+    font-size: 1rem;
+    width: 300px;
+}
+
+.BotaoForm{
+    position: relative;
+    margin: 15px auto;
+    cursor: pointer;
+    height: 40px;
+    border-radius: .5rem;
+    font-size: 1.4rem;
+    width: 200px;
+}
+
+
+
+
+
+
+#sectionProdutos{
+    margin: auto auto;
+    flex-wrap: wrap;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2;
+    width: 100%;
+    height: 100%;
+}
+
+.card_produto{
+    border-radius: 10px;
+	display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    color:black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 250px;
+    height: 500px;
+}
+.img_produto{
+    border: 2px solid black;
+    margin: 0 auto;
+    position: relative;
+	width: 200px;
+	height: 250px;
+}
+.tituloProduto{
+    position: relative;
+    font-size:1.5rem;
+}
+.textoProduto{
+    position: relative;
+    font-size: 1.0rem;
+}
+.descontoProduto{
+    position: relative;
+    color: red;
+    margin-top: 8px;
+    text-align: left;
+    top: 5px;
+    left:37px;
+    font-size: .9rem;
+    text-decoration: line-through;
+}
+.Preço{
+    position: relative;
+    font-size: 2.0rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: green;
+}
+
+.botao_adicionar_carrinho{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 40px;
+    width: 60px;
+    border-radius: 15px;
+}
+.botao_finalizar_compra{
+    position: fixed;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border-style: groove;
+    background-color: black;
+    color:white;
+    bottom:35px;
+    right:15px;
+    width: 200px;
+    height: 60px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+
+
+.verMais{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    font-size: 1.5rem;
+    color: black;
+    width: 300px;
+    height: 30px;
+}
+.verMais:hover{
+    text-decoration: underline;
+}
+
+
+
+

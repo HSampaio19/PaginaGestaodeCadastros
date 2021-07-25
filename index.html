@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cestaria - Produtos</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body onload= exibirProdutos()>
+    <header>
+            
+            <div id = 'cabecalho'>
+                <img class = 'LogoCestaria' src ="imagens/logoCestaria.png">
+                <input class = 'InputPesquisa' placeholder=" Encontre aqui as melhores ofertas" ><button onclick = clearLS() id = 'BotaoPesquisar'>OK</button>
+            </div>
+            
+    </header>
+    <main id="principal">
+        <section id="sectionProdutos">
+        </section>
+    <button onclick= "finalizarCompra()" class = 'botao_finalizar_compra'>Finalizar Compra</button>
+    </main>
+    <section id="sectionForm">
+        <p>Para concluir a sua compra preencha os dados abaixo</p>
+        <form id = 'formularioCadastro' class = 'FormularioCliente'>
+            <label>Nome Completo:</label>
+            <input type = 'text' id = 'nomeCliente' class = 'InputForm'>
+            <label>Endereço:</label>
+            <input type = 'text' id = 'enderecoCliente' class = 'InputForm'>
+            <label>Telefone:</label>
+            <input type = 'text' id = 'telefoneCliente' class = 'InputForm'>
+            <label>E-mail:</label>
+            <input type = 'email' id = 'emailCliente' class = 'InputForm'>
+            <label>Senha:</label>
+            <input type = 'password' id = 'senhaCliente' class = 'InputForm'>
+            <label>Confirme sua senha:</label>
+            <input type = 'password' id = 'confSenhaCliente' class = 'InputForm'>
+            <input onclick = "cancelar()" type= "button" class = 'BotaoForm' value="Cancelar">
+            <input type = 'submit' class = 'BotaoForm'>
+        </form>
+    </section>
+    <footer>
+        Todos os direitos reservados
+    </footer>
+</body>
+<script src='index.js' type="text/javascript"></script>
+</html>
